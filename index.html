@@ -11,9 +11,37 @@
     <title>BOOTSTRAP TRABAJO FINAL</title>
   </head>
   <body>
-      <header></header>
+      <header class="container">
+        <div class="row">
+          <div class="col">
+    <div style="align-items: center;">
+        <img src="./img/codoacodo.png" width="60" height="60" alt="">
+      Buenos Aires
+    </div>
+  </div>  
+  <div class="row" style="align-items: center;">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">La Conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Los Oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lugar y fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Conviertete en Orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Comprar Tickets</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      </header>
       <main>
-        <div class="container my-3">
+        <div class="container-fluid my-3">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -37,14 +65,14 @@
           <div class="carousel-caption d-none d-md-block">
             <div class="container" style="text-align: end;">
             <h5>Config Bs As</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-            <div class="row">            
-              <button type="button" class="btn btn-outline-secondary">Quiero ser Orador</button>                      
-              <button type="button" class="btn btn-success">Comprar Tickets</button>
-            </div>
+            <p>Some representative placeholder content for the first slide.</p>         
+            <button type="button" class="btn btn-outline-secondary">Quiero ser Orador</button>                      
+            <button type="button" class="btn btn-success">Comprar Tickets</button>         
             </div>
           </div>        
         </div>
+      </div>
+
         <div class="container" style="text-align: center;">
           <p>CONOCE A LOS</p>
           <h2>ORADORES</h2>
@@ -83,6 +111,7 @@
 </div>
       -->
 <!--CARDS MANUAL-->
+<div class="container">
 <div class="row text-center">
   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
     <div class="card shadow">
@@ -110,35 +139,38 @@
     <div class="card shadow">
       <img src="./Img/ada.jpeg" class="card-img-top" alt="...">
       <div class="card-body">        
-       <span class="badge badge-warning">Warning</span>
-       <span class="badge badge-primary">Primary</span>
+       <span class="badge badge-secondary">Secondary</span>
+       <span class="badge badge-danger">Danger</span>
        <h5 class="card-title">ADA LOVELACE</h5>
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cupiditate libero eveniet alias, error blanditiis atque modi distinctio dolores mollitia!</p>
       </div>
     </div>
   </div>
 </div>
+</div>
 
-<div class="row">
-  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+<div class="container-fluid">
+<div class="row my-3">
+  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
    <img src="./Img/honolulu.jpg" class="img-fluid" alt="...">  
   </div>
-  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 " style="background-color: rgb(58, 58, 58);">
+  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="background-color: rgb(58, 58, 58);">
    <h1>Bs As - Octubre</h1>
    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat incidunt ex 
-    praesentium quia corrupti. Sapiente aut quod eos mollitia, maxime accusantium voluptates. Aut quidem 
-    fuga alias tempore! Officiis, fugiat facilis!</p>
+    praesentium quia corrupti. Sapiente aut quod eos mollitia, maxime accusantium voluptates.</p>
     <button type="button" class="btn btn-outline-secondary">Secondary</button>
   </div>
 </div>
+</div>
 
+<div class="container">
 <div class="text-center">
   <p>CONVIERTETE EN UN</p>
   <h1>ORADOR</h1>
   <p>Anotate como orador para dar una charla ignite. Cuentanos de que quieres hablar </p>
 </div>
 
-<div>
+
   <form>
     <div class="form-row">
       <div class="col">
@@ -148,19 +180,55 @@
         <input type="text" class="form-control" placeholder="Apellido">
       </div>
     </div>
-    <div class="mb-2">
-      <label for="validationTextarea"></label>
-      <textarea class="form-label" id="validationTextarea" rows="7" cols="12" placeholder="Sobre que quieres hablar??" required></textarea>
-      
-       Recuerda incluir un titulo para tu charla.
-      
-  </form>
-</div>
 
+    <!--
+    <div class="form-group">
+      <label for="validationTextarea"></label>
+      <textarea class="form-label" id="validationTextarea" rows="5" placeholder="Sobre que quieres hablar??" required></textarea>      
+       Recuerda incluir un titulo para tu charla.
+      </div>
+      </div>-->  
+  </form>
+
+<div class="form-group my-3">   
+  <textarea class="form-control" rows="5" id="comentarios" name="comentarios" placeholder="Sobre que quieres hablar??"></textarea>
+  <label for="comentarios">Recuerda incluir un titulo para tu charla.</label>
+</div> 
+<button type="button" class="btn btn-success btn-lg btn-block">ENVIAR</button>
 </div>
       </main>
-      <footer>
+
+      <footer style="align-items: center; background-color: hsla(210, 55%, 28%, 0.863);height: 4rem;" class="container-fluid mt-3" >
+       
+        <ul class="nav justify-content-center">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Preguntas Frecuentes</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prensa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Conferencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Terminos y Condiciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Estudiantes</a>
+          </li>
+        </ul>
+      
+        <!--PRUEBA DE BOOTSTRAP BIEN INSTALADO
         <a href="https://www.google.com" style="background-color: aqua;border: 2px solid black;">IR A GOOGLE</a>
+        -->
       </footer>
 
     <!--Instalacion Local de Bootstrap-->
