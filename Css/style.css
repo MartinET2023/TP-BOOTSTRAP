@@ -4,7 +4,7 @@
 #text{
     display: flex;
     list-style: none;
-    animation: scrolling 8s linear infinite;
+    animation: scrolling 10s linear infinite;
 }
 @keyframes scrolling{
     0% { transform: translatex(0) }
